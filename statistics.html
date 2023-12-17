@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lewis Win</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/navbar.css" />
+    <link rel="icon" type="image/x-icon" href="zdj/icon-pic.jpg" />
+    <link rel="stylesheet" href="styles/statistics.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="js/charts.js" defer></script>
+<script src="js/table.js" defer></script>
+<script src="js/navbar.js" defer></script>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="brand-title">Hamilton's Run</div>
+      <a href="#" class="toggle-button">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </a>
+      <div class="navbar-links">
+        <ul>
+          <li><a href="page.html">Home</a></li>
+          <li><a href="map.html">Track Map</a></li>
+          <li>
+            <a href="statistics.html">Statistics</a>
+          </li>
+          <li>
+            <a href="#" class="home-a" onclick="darkMode()">Light Mode</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="stats-section">
+      <div class="general">
+        <ul>
+        <li class="name">Sir Lewis Hamilton</li>
+        <li class="nation">Nation: United Kingdom</li>
+        <li class="last-gp-win">Last won Gp: Saudi Arabia 2021</li>
+        <li class="Last-gp">Last Grand Prix: Abu Dhabi 2023</li>
+        <li class="best-result">Best result since last win: 2nd</li>
+        <li class="best-quali">
+          Best qualifying result: 1st (HUNGARIAN GRAND PRIX 2023)
+        </li>
+      </ul>
+    </div>
+        <hr />
+        
+      <ul>
+        <div class="detailed">
+          <div class="general-list">
+          <h4>General:</h4>
+          <li class="gp-total">Gp without win: 45</li>
+          <li class="seasons">Seasons: 2</li>
+          <li class="fastest-laps">Fastest laps:6 </li>
+          <li>Points: 474</li>
+          <li>Retirements:4 </li>
+        </div>
+        <div class="quali-list">
+          <h4>Qualifying:</h4>
+          <li class="poles-total">Pole posistions: 1</li>
+          <li>Front rows: 1</li>
+          <li>Q1/Q2 Eliminations: 6</li>
+          <li>Average grid postions:6.37</li>
+        </div>
+        <div class="positions-list">
+          <h4>Posistions:</h4>
+          <li>Average posistion:4.75 </li>
+          <li>Podiums:16 </li>
+          <li>P2 Finishes:9</li>
+          <li>P3 Finishes:7</li>
+        </div>
+        </ul>
+        <hr />
+        <div class="charts-section">
+          <h4>Postions Chart</h4>
+          <canvas id="positionChart"></canvas>
+          <h4>Qualifying Chart</h4>
+          <canvas id="QualiChart"></canvas>
+        </div>
+        
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="js/charts.js" defer></script>
+  </body>
+</html>
+
+
+
+
+

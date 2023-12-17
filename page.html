@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" />
+    <title>Lewis Win</title>
+    <link rel="stylesheet" href="styles/navbar.css" />
+    <link rel="stylesheet" href="styles/general.css" />
+    <link rel="stylesheet" href="styles/timer.css" />
+    <link rel="stylesheet" href="styles/table.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/x-icon" href="zdj/icon-pic.jpg" />
+    <script src="js/navbar.js" defer></script>
+    <script src="js/timer.js" defer></script>
+    <script src="js/table-res.js" defer></script>
+    <script src="js/table.js" defer></script>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="brand-title">Hamilton's Run</div>
+      <a href="#" class="toggle-button">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </a>
+      <div class="navbar-links">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="map.html">Track Map</a></li>
+          <li>
+            <a href="statistics.html">Statistics</a>
+          </li>
+          <li>
+            <a href="#" class="home-a" onclick="darkMode()">Light Mode</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <section class="timer">
+      <div id="countdown-timer">
+        <span id="days">0</span> days <span id="hours">0</span> hours
+        <span id="minutes">0</span> minutes <span id="seconds">0</span> seconds
+      </div>
+      <p class="since">Since Lewis Hamilton's last win</p>
+    </section>
+    <section class="button-section">
+      <button class="year-button" id="2021">2021</button>
+      <button class="year-button" id="2022">2022</button>
+      <button class="year-button active" id="2023">2023</button>
+    </section>
+    <div class="wrapper-trzy">
+      <table class="dwa-trzy-season">
+        <thead>
+          <tr>
+            <th>Track</th>
+            <th>Date</th>
+            <th>Qualifying</th>
+            <th>Sprint</th>
+            <th>Race</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td data-cell="track">Bahrain</td>
+            <td data-cell="date">05 Mar 2023</td>
+            <td data-cell="qualifying">7</td>
+            <td data-cell="sprint">N/A</td>
+            <td data-cell="race">5</td>
+          </tr>
+          <tr>
+            <td data-cell="track">Saudi Arabia</td>
+            <td data-cell="date">19 Mar 2023</td>
+            <td data-cell="qualifying">8</td>
+            <td data-cell="sprint">N/A</td>
+            <td data-cell="race">5</td>
+          </tr>
+          <tr>
+            <td data-cell="track">Australia</td>
+            <td data-cell="date">20 Mar 2022</td>
+            <td data-cell="qualifying">3</td>
+            <td data-cell="sprint">N/A</td>
+            <td data-cell="race">2</td>
+          </tr>
+          <tr>
+            <td data-cell="track">Azerbaijan</td>
+            <td data-cell="date">30 Apr 2023</td>
+            <td data-cell="qualifying">5</td>
+            <td data-cell="sprint">7</td>
+            <td data-cell="race">6</td>
+          </tr>
+          <tr>
+            <td data-cell="track">Miami</td>
+            <td data-cell="date">07 May 2023</td>
+            <td data-cell="qualifying">13</td>
+            <td data-cell="sprint">N/A</td>
+            <td data-cell="race">6</td>
+          </tr>
+          <tr>
+            <td data-cell="track">Monaco</td>
+            <td data-cell="date">28 May 2023</td>
+            <td data-cell="qualifying">6</td>
+            <td data-cell="sprint">N/A</td>
+            <td data-cell="race">4</td>
+          </tr>
+          <tr>
+            <td data-cell="track">Spain</td>
+            <td data-cell="date">04 Jun 2023</td>
+            <td data-cell="qualifying">5</td>
+            <td data-cell="sprint">N/A</td>
+            <td data-cell="race">2</td>
+          </tr>
+          <tr>
+            <td data-cell="track">Canada</td>
+            <td data-cell="date">18 Jun 2023</td>
+            <td data-cell="qualifying">4</td>
+            <td data-cell="sprint">N/A</td>
+            <td data-cell="race">3</td>
+          </tr>
+          <tr>
+            <td data-cell="track">Austria</td>
+            <td data-cell="date">02 Jul 2023</td>
+            <td data-cell="qualifying">5</td>
+            <td data-cell="sprint">10</td>
+            <td data-cell="race">8</td>
+          </tr>
+          <tr>
+            <td data-cell="track">Great Britain</td>
+            <td data-cell="date">09 Jul 2023</td>
+            <td data-cell="qualifying">7</td>
+            <td data-cell="sprint">N/A</td>
+            <td data-cell="race">3</td>
+          </tr>
+          <tr>
+            <td data-cell="track">Hungary</td>
+            <td data-cell="date">23 Jul 2023</td>
+            <td data-cell="qualifying">1</td>
+            <td data-cell="sprint">N/A</td>
+            <td data-cell="race">4</td>
+          </tr>
+          <tr>
+            <td data-cell="track">Belgium</td>
+            <td data-cell="date">30 Jul 2023</td>
+            <td data-cell="qualifying">4</td>
+            <td data-cell="sprint">7</td>
+            <td data-cell="race">4</td>
+          </tr>
+          <tr>
+            <td data-cell="track">Netherlands</td>
+            <td data-cell="date">27 Aug 2023</td>
+            <td data-cell="qualifying">13</td>
+            <td data-cell="sprint">N/A</td>
+            <td data-cell="race">6</td>
+          </tr>
+          <tr>
+            <td data-cell="track">Italy(Monza)</td>
+            <td data-cell="date">03 Sep 2023</td>
+            <td data-cell="qualifying">8</td>
+            <td data-cell="sprint">N/A</td>
+            <td data-cell="race">6</td>
+          </tr>
+          <tr>
+            <td data-cell="track">Singapore</td>
+            <td data-cell="date">17 Sep 2023</td>
+            <td data-cell="qualifying">5</td>
+            <td data-cell="sprint">N/A</td>
+            <td data-cell="race">3</td>
+          </tr>
+          <tr>
+            <td data-cell="track">Japan</td>
+            <td data-cell="date">24 Sep 2023</td>
+            <td data-cell="qualifying">7</td>
+            <td data-cell="sprint">N/A</td>
+            <td data-cell="race">5</td>
+          </tr>
+          <tr>
+            <td data-cell="track">Qatar</td>
+            <td data-cell="date">08 Oct 2023</td>
+            <td data-cell="qualifying">3</td>
+            <td data-cell="sprint">5</td>
+            <td data-cell="race">DNF</td>
+          </tr>
+          <tr>
+            <td data-cell="track">USA(Austin)</td>
+            <td data-cell="date">22 Oct 2023</td>
+            <td data-cell="qualifying">3</td>
+            <td data-cell="sprint">2</td>
+            <td data-cell="race">DSQ</td>
+          </tr>
+          <tr>
+            <td data-cell="track">Mexico</td>
+            <td data-cell="date">29 Oct 2023</td>
+            <td data-cell="qualifying">6</td>
+            <td data-cell="sprint">N/A</td>
+            <td data-cell="race">2</td>
+          </tr>
+          <tr>
+            <td data-cell="track">Brazil</td>
+            <td data-cell="date">05 Nov 2023</td>
+            <td data-cell="qualifying">5</td>
+            <td data-cell="sprint">7</td>
+            <td data-cell="race">8</td>
+          </tr>
+          <tr>
+            <td data-cell="track">Las Vegas</td>
+            <td data-cell="date">18 Nov 2023</td>
+            <td data-cell="qualifying">11</td>
+            <td data-cell="sprint">N/A</td>
+            <td data-cell="race">7</td>
+          </tr>
+          <tr>
+            <td data-cell="track">Abu Dhabi</td>
+            <td data-cell="date">26 Nov 2023</td>
+            <td data-cell="qualifying">11</td>
+            <td data-cell="sprint">N/A</td>
+            <td data-cell="race">9</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="wrapper-dwa">
+      <table class="dwa-dwa-season">
+        <thead>
+          <tr>
+            <th>Track</th>
+            <th>Date</th>
+            <th>Qualifying</th>
+            <th>Sprint</th>
+            <th>Race</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td data-cell="track">Bahrain</td>
+            <td data-cell="date">20 Mar 2022</td>
+            <td data-cell="qualifying">5</td>
+            <td data-cell="sprint">N/A</td>
+            <td data-cell="race">3</td>
+          </tr>
+          <tr>
+            <td data-cell="track">Saudi Arabia</td>
+            <td data-cell="date">27 Mar 2022</td>
+            <td data-cell="qualifying">16</td>
+            <td data-cell="sprint">N/A</td>
+            <td data-cell="race">10</td>
+          </tr>
+          <tr>
+            <td data-cell="track">Australia</td>
+            <td data-cell="date">20 Mar 2022</td>
+            <td data-cell="qualifying">5</td>
+            <td data-cell="sprint">N/A</td>
+            <td data-cell="race">4</td>
+          </tr>
+          <tr>
+            <td data-cell="track">Emilia Romagna</td>
+            <td data-cell="date">24 Apr 2022</td>
+            <td data-cell="qualifying">13</td>
+            <td data-cell="sprint">N/A</td>
+            <td data-cell="race">13</td>
+          </tr>
+          <tr>
+            <td data-cell="track">Miami</td>
+            <td data-cell="date">08 May 2022</td>
+            <td data-cell="qualifying">6</td>
+            <td data-cell="sprint">N/A</td>
+            <td data-cell="race">6</td>
+          </tr>
+          <tr>
+            <td data-cell="track">Spain</td>
+            <td data-cell="date">22 May 2022</td>
+            <td data-cell="qualifying">6</td>
+            <td data-cell="sprint">N/A</td>
+            <td data-cell="race">5</td>
+          </tr>
+          <tr>
+            <td data-cell="track">Monaco</td>
+            <td data-cell="date">29 May 2022</td>
+            <td data-cell="qualifying">8</td>
+            <td data-cell="sprint">N/A</td>
+            <td data-cell="race">8</td>
+          </tr>
+          <tr>
+            <td data-cell="track">Azerbaijan</td>
+            <td data-cell="date">12 Jun 2022</td>
+            <td data-cell="qualifying">7</td>
+            <td data-cell="sprint">N/A</td>
+            <td data-cell="race">4</td>
+          </tr>
+          <tr>
+            <td data-cell="track">Canada</td>
+            <td data-cell="date">12 Jun 2022</td>
+            <td data-cell="qualifying">4</td>
+            <td data-cell="sprint">N/A</td>
+            <td data-cell="race">3</td>
+          </tr>
+          <tr>
+            <td data-cell="track">Great Britain</td>
+            <td data-cell="date">03 Jul 2022</td>
+            <td data-cell="qualifying">5</td>
+            <td data-cell="sprint">N/A</td>
+            <td data-cell="race">3</td>
+          </tr>
+          <tr>
+            <td data-cell="track">Austria</td>
+            <td data-cell="date">10 Jul 2022</td>
+            <td data-cell="qualifying">9</td>
+            <td data-cell="sprint">N/A</td>
+            <td data-cell="race">3</td>
+          </tr>
+          <tr>
+            <td data-cell="track">France</td>
+            <td data-cell="date">24 Jul 2022</td>
+            <td data-cell="qualifying">4</td>
+            <td data-cell="sprint">N/A</td>
+            <td data-cell="race">2</td>
+          </tr>
+          <tr>
+            <td data-cell="track">Hungary</td>
+            <td data-cell="date">31 Jul 2022</td>
+            <td data-cell="qualifying">7</td>
+            <td data-cell="sprint">N/A</td>
+            <td data-cell="race">2</td>
+          </tr>
+          <tr>
+            <td data-cell="track">Belgium</td>
+            <td data-cell="date">28 Aug 2022</td>
+            <td data-cell="qualifying">7</td>
+            <td data-cell="sprint">N/A</td>
+            <td data-cell="race">DNF</td>
+          </tr>
+          <tr>
+            <td data-cell="track">Netherlands</td>
+            <td data-cell="date">04 Sep 2022</td>
+            <td data-cell="qualifying">4</td>
+            <td data-cell="sprint">N/A</td>
+            <td data-cell="race">4</td>
+          </tr>
+          <tr>
+            <td data-cell="track">Monza</td>
+            <td data-cell="date">11 Sep 2022</td>
+            <td data-cell="qualifying">5</td>
+            <td data-cell="sprint">N/A</td>
+            <td data-cell="race">5</td>
+          </tr>
+          <tr>
+            <td data-cell="track">Singapore</td>
+            <td data-cell="date">02 Oct 2022</td>
+            <td data-cell="qualifying">3</td>
+            <td data-cell="sprint">N/A</td>
+            <td data-cell="race">9</td>
+          </tr>
+          <tr>
+            <td data-cell="track">Japan</td>
+            <td data-cell="date">09 Oct 2022</td>
+            <td data-cell="qualifying">6</td>
+            <td data-cell="sprint">N/A</td>
+            <td data-cell="race">5</td>
+          </tr>
+          <tr>
+            <td data-cell="track">United States</td>
+            <td data-cell="date">23 Oct 2022</td>
+            <td data-cell="qualifying">5</td>
+            <td data-cell="sprint">N/A</td>
+            <td data-cell="race">2</td>
+          </tr>
+          <tr>
+            <td data-cell="track">Mexico</td>
+            <td data-cell="date">30 Oct 2022</td>
+            <td data-cell="qualifying">3</td>
+            <td data-cell="sprint">N/A</td>
+            <td data-cell="race">2</td>
+          </tr>
+          <tr>
+            <td data-cell="track">Brazil</td>
+            <td data-cell="date">13 Nov 2022</td>
+            <td data-cell="qualifying">8</td>
+            <td data-cell="sprint">N/A</td>
+            <td data-cell="race">2</td>
+          </tr>
+          <tr>
+            <td data-cell="track">Abu Dhabi</td>
+            <td data-cell="date">20 Nov 2022</td>
+            <td data-cell="qualifying">5</td>
+            <td data-cell="sprint">N/A</td>
+            <td data-cell="race">DNF</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="wrapper-jeden">
+      <table class="dwa-jeden-season">
+        <thead>
+          <tr>
+            <th>Track</th>
+            <th>Date</th>
+            <th>Qualifying</th>
+            <th>Sprint</th>
+            <th>Race</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="win-sad">
+            <td data-cell="track">Saudi Arabia</td>
+            <td data-cell="date">05 Dec 2021</td>
+            <td data-cell="qualifying">1</td>
+            <td data-cell="sprint">N/A</td>
+            <td data-cell="race">1</td>
+          </tr>
+          <tr>
+            <td data-cell="track">Abu Dhabi</td>
+            <td data-cell="date">12 Dec 2021</td>
+            <td data-cell="qualifying">2</td>
+            <td data-cell="sprint">N/A</td>
+            <td data-cell="race">2</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </body>
+</html>

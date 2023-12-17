@@ -1,0 +1,44 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Lato", sans-serif;
+  background: linear-gradient(45deg, #232323, #000000);
+  color: white;
+  min-height: 100vh;
+
+  overflow-x: hidden;
+}
+.Light-Mode {
+  background: linear-gradient(45deg, #f4f4f4, #ada5a5);
+}
+.map {
+  margin-top: 2rem;
+}
+.info-map {
+  margin-left: 11rem;
+}
+#name,
+#number-of-races,
+#position {
+  background-color: green;
+  width: fit-content;
+  opacity: 0;
+  border-radius: 10px;
+  border: 3px solid purple;
+  padding: 10px;
+  font-size: 1.1rem;
+}
+#name {
+  position: absolute;
+}
+svg path {
+  cursor: pointer;
+}
+@media (max-width: 900px) {
+  .map {
+    margin-left: 0rem;
+  }
+}
