@@ -27,7 +27,7 @@ new Chart(positionChart, {
     ],
     datasets: [
       {
-        label: "number of each race position",
+        label: "number of times he took a given place",
         data: [0, 9, 7, 6, 6, 5, 1, 3, 2, 1, 0, 0, 1],
         borderWidth: 1,
       },
@@ -72,7 +72,7 @@ new Chart(qualiChart, {
     ],
     datasets: [
       {
-        label: "number of each grid position",
+        label: "number of times he took a given place",
         data: [1, 1, 5, 5, 9, 6, 6, 5, 1, 0, 2, 0, 3, 0, 0, 1],
         borderWidth: 1,
       },
