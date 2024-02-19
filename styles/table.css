@@ -1,6 +1,7 @@
 .wrapper-jeden,
 .wrapper-dwa,
-.wrapper-trzy {
+.wrapper-trzy,
+.wrapper-cztery {
   width: min(900px, 100% - 3rem);
   margin-inline: auto;
 }
@@ -53,9 +54,11 @@ table {
 }
 
 .wrapper-trzy {
+  display: none;
+}
+.wrapper-cztery {
   display: block;
 }
-
 th,
 td,
 caption {
