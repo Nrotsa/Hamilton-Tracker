@@ -73,7 +73,7 @@ new Chart(qualiChart, {
     datasets: [
       {
         label: "number of times he took a given place",
-        data: [1, 1, 5, 5, 9, 6, 6, 6, 2, 0, 2, 0, 3, 0, 0, 1],
+        data: [1, 1, 5, 5, 9, 6, 6, 7, 2, 0, 3, 0, 3, 0, 0, 1],
         borderWidth: 1,
       },
     ],
