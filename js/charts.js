@@ -28,7 +28,7 @@ new Chart(positionChart, {
     datasets: [
       {
         label: "number of times he took a given place",
-        data: [0, 9, 7, 6, 6, 5, 2, 3, 2, 1, 0, 0, 1],
+        data: [0, 9, 7, 6, 6, 5, 2, 3, 3, 1, 0, 0, 1, 0, 0, 0, 0, 1],
         borderWidth: 1,
       },
     ],
