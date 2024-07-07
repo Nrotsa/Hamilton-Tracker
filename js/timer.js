@@ -1,5 +1,5 @@
 function updateCountdownTimer() {
-  const currentDate = new Date();
+  const currentDate = new Date("2024-07-07T17:30:00");
   const lastWinDate = new Date("2021-12-05T20:36:15");
   const timeDifference = currentDate - lastWinDate;
 
